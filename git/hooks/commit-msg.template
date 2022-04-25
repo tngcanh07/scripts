@@ -1,0 +1,7 @@
+#!/bin/bash
+
+hook="./scripts/git/hooks/commit-msg.py"
+
+if test -f "$hook"; then
+    "$hook" "$@"
+fi
